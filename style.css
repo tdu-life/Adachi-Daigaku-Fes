@@ -1,0 +1,59 @@
+ body {
+     font-family: sans-serif;
+     scroll-behavior: smooth;
+ }
+
+ .bg-orange {
+     background-color: #ff8000 !important;
+ }
+
+ .text-orange {
+     color: #ff8000;
+ }
+
+ #splash {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background-color: #ff8000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     font-size: 2.5rem;
+     z-index: 9999;
+     transition: opacity 1s ease;
+ }
+
+ header.hero-section {
+     height: 100vh;
+     background: url('https://placehold.jp/1200x800.png') no-repeat center center/cover;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     color: white;
+ }
+
+ .hero-section .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+ }
+
+ .hero-text {
+     position: relative;
+     z-index: 2;
+ }
+
+ .section {
+     padding: 60px 0;
+ }
+
+ .card {
+     cursor: pointer;
+ }

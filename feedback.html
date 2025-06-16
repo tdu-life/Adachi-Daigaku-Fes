@@ -43,7 +43,7 @@
             </p>
             <a href="#">アンケート</a>
             <img src="https://placehold.jp/300x200.png" alt="画像" class="img-fluid d-block mx-auto mt-3">
-        </div>        
+        </div>
     </section>
 
 
@@ -71,7 +71,8 @@
 
                 <!-- SNSアイコン -->
                 <div class="col-md-4 mb-3">
-                    <h5>公式SNS</h5><p>準備中です…</p>
+                    <h5>公式SNS</h5>
+                    <p>準備中です…</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
@@ -89,6 +90,20 @@
 </body>
 <script>
     AOS.init();
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbarCollapse = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+        });
+
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function () {
+            // メニューが開いているかを判定
+            if (navbarCollapse.classList.contains('show')) {
+                bsCollapse.hide(); // メニューを閉じる
+            }
+        });
+    });
 
 </script>
 

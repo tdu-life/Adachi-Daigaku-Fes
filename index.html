@@ -87,7 +87,8 @@
         <div class="container">
             <h2>パンフレット</h2>
             <p>あだち大学フェスの公式パンフレットです。<br>当日は会場でもお配りしていますが、こちらをダウンロードしていただくとお手持ちのスマートフォンからご覧いただけます。
-            <br>ただいま製作中！</p>
+                <br>ただいま製作中！
+            </p>
         </div>
         <div class="text-end">
             <a href="panfret.pdf" class="btn btn-outline-orange d-inline-flex align-items-center">
@@ -97,7 +98,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section bg-light" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <section id="projects" class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="container">
             <h2>出展団体</h2>
             <div class="row g-4">
@@ -183,7 +184,7 @@
     <section id="sponsor" class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="container">
             <h2>協賛・地域連携</h2>
-            <p>あだち大学フェスの開催にあたり協賛していただいた方々です。</p>
+            <p>あだち大学フェスの開催にあたり協賛していただいた団体です。</p>
             <div class="row justify-content-center align-items-center g-4 sponsor-logos">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
                     <img src="https://placehold.jp/200x60.png?text=Logo1" alt="企業ロゴ1" class="img-fluid sponsor-logo">
@@ -207,8 +208,8 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section bg-light" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div class="container">
+    <section id="contact" class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="container" style="background-color: transparent;">
             <h2>お問い合わせ</h2>
             <p>メール:adagakufes@gmail.com</p>
             <p>主催：あだち大学フェス実行委員会</p>
@@ -239,7 +240,8 @@
 
                 <!-- SNSアイコン -->
                 <div class="col-md-4 mb-3">
-                    <h5>公式SNS</h5><p>準備中です…</p>
+                    <h5>公式SNS</h5>
+                    <p>準備中です…</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
@@ -266,6 +268,24 @@
                 setTimeout(() => splash.style.display = 'none', 500);
             }, 1000);
         });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+
+            let lastScrollTop = window.pageYOffset;
+            window.addEventListener('scroll', function () {
+                const currentScroll = window.pageYOffset;
+                if (navbarCollapse.classList.contains('show') && Math.abs(currentScroll - lastScrollTop) > 30) {
+                    bsCollapse.hide();
+                }
+                lastScrollTop = currentScroll;
+            });
+        });
+
     </script>
 </body>
 

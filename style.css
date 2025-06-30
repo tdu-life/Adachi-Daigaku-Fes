@@ -32,7 +32,8 @@
 
  header.hero-section {
    height: 100vh;
-   background: url('https://placehold.jp/1200x800.png') no-repeat center center/cover;
+   /* background: url('https://placehold.jp/1200x800.png') no-repeat center center/cover; */
+   background-color: #f9eee3;
    background-attachment: fixed;
    position: relative;
    display: flex;
@@ -201,4 +202,12 @@
   .card-img-top-my {
     width: 10vw;
   }
+}
+
+
+.disabled-overlay {
+  background-color: rgba(128, 128, 128, 0.5); /* 半透明のグレー */
+  pointer-events: none;                       /* タッチ・クリック無効化 */
+  opacity: 0.6;                                /* 視覚的に無効感を出す */
+  filter: grayscale(100%);                    /* 色味を抑える（任意） */
 }

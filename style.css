@@ -1,12 +1,13 @@
  body {
-   font-family: sans-serif;
-   scroll-behavior: smooth;
-   background-image: url('imgs/あだち大学フェス_ロゴ.png');  /* 背景画像のパス */
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-image: url('imgs/adagaku-fes-logo.png');
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;        /* 横幅100%、高さは比率自動 */
+  background-position: center center; /* 上下左右とも中央配置 */
   background-repeat: no-repeat;
- }
+}
+
 
  .bg-orange {
    background-color: #ff8000 !important;

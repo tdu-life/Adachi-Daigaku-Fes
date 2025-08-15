@@ -222,3 +222,26 @@
     display: block;
     margin: 0 auto;
 }
+
+.sns-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* アイコン間の間隔 */
+    margin-top: 15px;
+}
+
+.sns-link {
+    font-size: 1.8rem;
+    color: #555;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.sns-link:hover {
+    color: #ff6600; /* オレンジに変更（好みに応じて） */
+    transform: scale(1.1);
+}
+
+.mosaic{
+	-ms-filter: blur(1px);
+	filter: blur(1px);
+}

@@ -212,3 +212,13 @@
   opacity: 0.6;                                /* 視覚的に無効感を出す */
   filter: grayscale(100%);                    /* 色味を抑える（任意） */
 }
+
+
+.card-img-top-d {
+    height: 200px; /* 好きな高さに調整 */
+    width: 100%;
+    object-fit: contain; /* 切り取らずに縮小 */
+    background-color: #f8f8f8; /* 画像が小さい場合の余白色 */
+    display: block;
+    margin: 0 auto;
+}
